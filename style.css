@@ -157,7 +157,7 @@ nav li:last-child a:active{
 }
 
 /*------------------------PROJECT------------------------*/
-#alert{
+/*#alert{
     font-size: 4rem;
     font-family: var(--mono);
     color: var(--white);
@@ -168,7 +168,66 @@ nav li:last-child a:active{
     padding: 2rem;
     margin: 0;
     background-color: red;
+}*/
+
+#projects{
+    background-color: var(--dkblue);
+    padding: 4rem 1rem;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: row wrap;
 }
+
+#projects h2{
+    font-size: 2.5rem;
+    margin-bottom: calc(2.5rem * 1.5);
+}
+
+#projects h3{
+    color: var(--aqua);
+}
+
+#projects h4{
+    font-size: 1rem;
+    font-family: var(--mono);
+    margin: 0;
+}
+
+#projects ul{
+    list-style: none;
+}
+
+#projects a{
+    color: var(--aqua);
+    text-decoration: none;
+}
+
+.project-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 0;
+}
+
+.project-item p{
+    background-color: var(--black);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    color: var(--white);
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.project-item img{
+    width: 400px;
+    height: auto;
+    padding: 1rem;
+    margin: 2rem 0 4rem 0;
+    border-left: solid 1px var(--white);
+    border-top: solid 1px var(--white);
+    border-radius: 0.5rem;
+}
+
 
 /*--------------------CONTACT STYLES--------------------*/
 #contact{
@@ -231,4 +290,12 @@ footer ul{
     height: 2px;
     background: rgb(255,23,228);
     background: linear-gradient(90deg, rgba(255,23,228,1) 35%, rgba(134,251,251,1) 70%);
+}
+
+
+/*--------------------GLOBAL STYLES--------------------*/
+h1,
+h2,
+h3{
+    margin: 0;
 }
