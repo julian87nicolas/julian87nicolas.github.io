@@ -183,11 +183,14 @@ nav li:last-child a:active{
 #contact h2{
     display: block;
     font-size: 2rem;
+    margin: 0;
+    padding: 0;
 }
 #contact p{
     width: 18rem;
     font-size: 1rem;
-    margin: 4rem 0 0 0;
+    margin-top: 2rem;
+    margin-bottom: 0;
 }
 
 /*--------------------FOOTER STYLES--------------------*/
@@ -220,4 +223,12 @@ footer ul{
     padding: 0 0 1rem 0;
     margin: 0;
     font-size: 1rem;
+}
+
+
+/*--------------------BORDER GRADIENT--------------------*/
+.border-gradient{
+    height: 2px;
+    background: rgb(255,23,228);
+    background: linear-gradient(90deg, rgba(255,23,228,1) 35%, rgba(134,251,251,1) 70%);
 }
