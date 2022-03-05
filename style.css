@@ -79,35 +79,15 @@ a:hover{
     font-weight: normal;
 }
 
-/*navigator bar styles*/
+/*NAVIGATOR BAR STYLES*/
 
-#nav-bar{
+nav{
     font-family: var(--mono);
     font-size: 80%;
     padding: 1rem;
 }
 
-#nav-bar h1 a{
-    font-family: var(--sans);
-}
-
-#nav-bar li:first-child{
-    flex-basis: 30%;
-    text-align: left;
-    padding-left: 2rem;    
-}
-
-#nav-bar li:last-child{
-    background-color: var(--magenta);
-    color: var(--black);
-    padding: 0.5rem;
-    border-radius: 0.5rem;
-}
-#nav-bar li:last-child a:hover{
-    color: var(--black);
-}
-
-#nav-bar ul{
+nav ul{
     list-style: none;
     padding: 0;
     margin: 0;
@@ -118,24 +98,78 @@ a:hover{
     gap: 2rem;
 }
 
-#nav-bar a:hover{
-    color: var(--magenta);
+nav h1 a{
+    font-family: var(--sans);
 }
 
-#nav-bar a{
+nav a{
     color: var(--white);
     text-decoration: none;
     display: block;
 }
-
+/*name icon*/
 .fa-solid.fa-code{
     color: var(--aqua);
 }
-.fa-solid.fa-code:hover{
+
+nav li:first-child{
+    flex-basis: 100%;
+    text-align: left;
+    padding-left: auto;    
+}
+
+nav li:first-child{
+    color: var(--aqua);
+}
+
+nav li:first-child a:hover{
     color: var(--magenta);
 }
 
-/*contact styles*/
+/*resume button*/
+nav li:last-child a{
+    background-color: var(--magenta);
+    color: var(--black);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+nav li:last-child a:hover{
+    color: var(--white);
+}
+nav li:last-child a:active{
+    padding: 0.25rem;
+    border: solid 0.25rem var(--plum);
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    background-color: var(--hotmag);
+}
+
+@media(min-width: 850px){
+    nav{
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    nav li:first-child{
+        flex-basis: auto;
+        text-align: left;
+        margin-right: auto;
+    }
+}
+
+/*alert*/
+#alert{
+    font-size: 4rem;
+    font-family: var(--mono);
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    margin: 0;
+    background-color: red;
+}
+
+/*--------------------CONTACT STYLES--------------------*/
 #contact{
     background-color: var(--plum);
     margin: 0;
@@ -153,4 +187,35 @@ a:hover{
     width: 18rem;
     font-size: 1rem;
     margin: 4rem 0 0 0;
+}
+
+/*--------------------FOOTER STYLES--------------------*/
+footer{
+    padding: 3rem;
+}
+
+footer h2{
+    display: flex;
+    justify-content: center;
+    flex-basis: 100%;
+    padding: 0;
+    margin: 2rem;
+}
+
+footer ul{
+    display: flex;
+    flex-basis: 100%;
+    list-style: none;
+    margin: 0;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.rights{
+    display: flex;
+    justify-content: center;
+    flex-basis: 100%;
+    padding: 0 0 1rem 0;
+    margin: 0;
+    font-size: 1rem;
 }
