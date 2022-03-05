@@ -157,7 +157,13 @@ nav li:last-child a:active{
 }
 
 /*------------------------PROJECT------------------------*/
-
+#projects {
+    /*padding: 4rem 1rem;*/
+    padding-bottom: 10rem;
+    padding: 4rem 1rem 10rem 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
 .section-blue{
     background-color: var(--dkblue);
 }
@@ -169,7 +175,10 @@ nav li:last-child a:active{
     background-color: var(--black);
     font-size: 1rem;
     line-height: 1.5;
+    border-left: 1px solid var(--aqua);
+    border-bottom: 1px solid var(--aqua);
 }
+
 
 #projects ul{
     list-style: none;
@@ -190,13 +199,7 @@ nav li:last-child a:active{
     border-radius: 25px;
 }
 
-#projects {
-    /*padding: 4rem 1rem;*/
-    padding-bottom: 10rem;
-    padding: 4rem 1rem 10rem 1rem;
-    max-width: 1200px;
-    margin: 0 auto;
-}
+
 #projects h2 {
     font-size: 2.5rem;
     margin-bottom: calc(2.5rem * 1.5);
@@ -211,7 +214,14 @@ nav li:last-child a:active{
   margin: 0;
 }
 
+#projects a{
+    color: var(--magenta);
+    text-decoration: none;
+}
 
+#projects a:hover{
+    color: var(--hotmag);
+}
 
 
 @media (min-width: 800px) {
@@ -321,4 +331,5 @@ h3{
 
 img{
     width: 100%;
+    background-color: black;
 }
