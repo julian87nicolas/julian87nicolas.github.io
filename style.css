@@ -84,7 +84,7 @@ a:hover{
 nav{
     font-family: var(--mono);
     font-size: 80%;
-    padding: 1rem;
+    padding: 4rem;
 }
 
 nav ul{
@@ -332,4 +332,10 @@ h3{
 img{
     width: 100%;
     background-color: black;
+}
+
+
+/*-------------------------------ABOUT PAGE---------------------------*/
+.about img{
+    grid-row: 1/8;
 }
