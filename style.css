@@ -333,9 +333,3 @@ img{
     width: 100%;
     background-color: black;
 }
-
-
-/*-------------------------------ABOUT PAGE---------------------------*/
-.about img{
-    grid-row: 1/8;
-}
