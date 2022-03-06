@@ -156,7 +156,7 @@ nav li:last-child a:active{
     }
 }
 
-/*------------------------PROJECT------------------------*/
+/*------------------------PROJECT and ABOUT page------------------------*/
 #projects {
     /*padding: 4rem 1rem;*/
     padding-bottom: 10rem;
@@ -255,8 +255,6 @@ nav li:last-child a:active{
       justify-content: flex-start;
     }
 }
-
-
 
 /*--------------------CONTACT STYLES--------------------*/
 #contact{
