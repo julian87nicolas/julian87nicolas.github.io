@@ -84,7 +84,7 @@ a:hover{
 nav{
     font-family: var(--mono);
     font-size: 80%;
-    padding: 4rem;
+    padding: 2rem;
 }
 
 nav ul{
@@ -127,21 +127,30 @@ nav li:first-child a:hover{
 }
 
 /*resume button*/
-nav li:last-child a{
+nav .resume a{
     background-color: var(--magenta);
     color: var(--black);
     padding: 0.5rem;
     border-radius: 0.5rem;
 }
-nav li:last-child a:hover{
+nav .resume a:hover{
     color: var(--white);
 }
-nav li:last-child a:active{
+nav .resume a:active{
     padding: 0.25rem;
     border: solid 0.25rem var(--plum);
     border-radius: 0.5rem;
     font-size: 1rem;
     background-color: var(--hotmag);
+}
+
+nav li:last-child{
+    /*position: absolute;
+    top: 0;
+    right: 0;*/
+    border: none;
+    list-style: none;
+    width: 2rem;
 }
 
 @media(min-width: 850px){
